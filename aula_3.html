@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PROG</title>
+<style>
+    body{
+        background-color: rgb(195, 160, 229);
+        color:white;
+        font: normal 20pt Arial;
+        }
+</style>
+
+
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <p>Me livrei</p>
+
+    <script>
+        //window.alert('Atenção!')
+        //window.confirm('Está gostando de JS?')
+        var n = 1545.5
+
+        var nome = window.prompt('Qual é o seu nome?<br>') //recebe string
+        document.write(`Olá ${nome}, Seu nome tem ${nome.length} letras <br>`)
+        document.write(`${nome.toUpperCase()}<br>`)
+        document.write(`${n.toFixed(2).replace('.',',')}<br>`)
+        document.write(n.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) + '<br>')
+        document.write(n.toLocaleString('pt-BR', {style:'currency', currency:'USD'}) + '<br>')
+        document.write(n.toLocaleString('pt-BR', {style:'currency', currency:'EUR'}) + '<br>')
+        document.write(n.toLocaleString('pt-BR', {style:'currency', currency:'BTC'}))
+        //console.log(n.toLocaleString('en-US', {style:'currency', currency:'USD'}));
+       //window.alert('Welcome ' + nome + ' >> ' + Number.parseFloat(cal
+    </script>
+</body>
+</html>
+
