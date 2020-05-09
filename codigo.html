@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Olá</h3>
+    
+    <p>Velocidade</p>
+    <p>Status Velocidade</p>
+
+    <input type="number" name="txtn1" id="veloc">
+    <input type="button" value="Mostrar" onclick="show()"> 
+    <br>
+    <br>
+    <script>
+        function show(){
+            var msg1 = document.getElementsByTagName('p')[0]
+            var msg2 = document.getElementsByTagName('p')[1]
+            var vel = document.getElementById('veloc')
+            var n = Number(vel.value)
+
+            msg1.innerText = `A velocidade é igual a ${n}`
+
+            //document.write(`A velocidade é igual a ${n}`)
+            
+            if (n == 12){
+                msg2.innerText = 'Velocidade Aceitável!'
+                //document.write('<strong>Velocidade Aceitável!</strong>')  
+            }
+            else if (n > 12){
+                msg2.innerText = 'Velocidade Ultrapassada!'
+                //document.write('<strong>Velocidade Ultrapassada!</strong>') 
+            }
+        }
+    </script>
+</body>
+</html>
+
+<strong></strong>
