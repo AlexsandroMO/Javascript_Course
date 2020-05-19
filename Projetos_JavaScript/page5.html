@@ -1,0 +1,21 @@
+<!-- The `multiple` attribute lets users select multiple files. -->
+<input type="file" id="file-selector" multiple>
+<p>sasa</p>
+
+
+
+<script>
+var lista = document.getElementsByClassName('p')
+  const fileSelector = document.getElementById('file-selector');
+  fileSelector.addEventListener('change', (event) => {
+    const fileList = event.target.files;
+    console.log(fileList);
+    lista.innerHTML += fileList;
+    window.alert(fileList[0]);
+
+  });
+
+
+  //https://web.dev/read-files/
+</script>
+
