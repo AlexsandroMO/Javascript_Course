@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" />
+        <title>SQLite: Insert, Select & Update</title>
+    </head>
+
+    <body>
+        <h1>SQLite: Insert, Select & Update</h1>
+        <div class="aligncenter">
+            <input type="hidden" id="field-id" value="" />
+                <div class="per">
+                    <button type="button" class="btn btn-secondary" id="btn-mostrar" onclick="mostrar()">Atualizar</button>
+                    <button type="button" class="btn btn-secondary" id="btn-deletar"onclick="deletar()">Deletar</button>
+                    <a href="/index.html"><button id="alinha-bt" type="button" class="btn btn-secondary">Adicionar</button></a>
+
+                </div>
+
+            <table id="table-register">
+                <thead>
+                    <th>Nome</th>
+                    <th>Data de Nascimento</th>
+                    <th>CEP</th>
+                    <th>CIDADE</th>
+                    <th>ESTADO</th>
+                    <th>BAIRRO</th>
+                    <th>RUA</th>
+                    <th>NUMERO</th>
+                    <th>EMAIL</th>
+                    <th>SENHA</th>
+                </thead>
+                <tbody id="tbody-register">
+                
+                </tbody>
+  
+            </table>
+ 
+        </div>
+
+    </body>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="banco.js"></script>
+    <script src="correios.js"></script>
+
+
+</html>
+

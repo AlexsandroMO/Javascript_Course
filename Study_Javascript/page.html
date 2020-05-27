@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <h1>Vamos Contar</h1>
+    </header>
+    <section> 
+        <div>
+            <p>Início:
+                <input type="number" name="txtinicio" id="txtinicio">
+            </p>
+            <p>Fim:
+                <input type="number" name="txtfim" id="txtfim">
+            </p>
+            <p>Passo:
+                <input type="number" name="txtpasso" id="txtpasso">
+            </p>
+            <p>
+                <input type="button" value="Contar" id="Contar" onclick="contar()">
+            </p>
+        </div>
+        <div id="res">
+            A contagem é:
+        </div>      
+    </section>
+    <footer>
+        <p>&copy; Estudos JavaScript</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+         
+       function contar(){
+
+            var fim = document.getElementById('txtinicio')
+            var urlStr = "https://google.com"
+
+                console.log(urlStr)
+                document.getElementById('txtfim').value=(fim.value)
+                window.open(urlStr, "minhaJanela", "height=600,width=1000")
+                //document.getElementById('txtfim').value=(fim.value)
+
+
+            }
+
+            //https://www.youtube.com/watch?v=m_5ksklp5Tc
+   
+
+    </script>
+
+  
+</body>
+</html>
+
